@@ -336,8 +336,12 @@ class Line(object):
         #        The tests are already written (below).
         #        They include the Example in the above doc-string.
         # ---------------------------------------------------------------------
-        self.start = Line.start
-        self.end = Line.end
+        p1 = self.start
+        p2 = self.end
+        line1 = Point(p1, p2)
+        Line2 = line1.clone()
+        self.start = line1.start
+        self.end = line2.start
 
     def reverse(self):
         """
@@ -372,6 +376,9 @@ class Line(object):
         #        The tests are already written (below).
         #        They include the Example in the above doc-string.
         # ---------------------------------------------------------------------
+        t = self.x
+        self.x = self.y
+        self.y = t
 
     def slope(self):
         """
@@ -507,7 +514,7 @@ class Line(object):
           :rtype: Line:
         """
         # ---------------------------------------------------------------------
-        # TODO: 9.
+        # Done: 9.
         #   a. READ the above specification, including the Example.
         #        ** ASK QUESTIONS AS NEEDED. **
         #        ** Be sure you understand it, ESPECIALLY the Example.
@@ -515,6 +522,7 @@ class Line(object):
         #        The tests are already written (below).
         #        They include the Example in the above doc-string.
         # ---------------------------------------------------------------------
+        self.
 
     def line_minus(self, other_line):
         """
@@ -577,6 +585,7 @@ class Line(object):
         #        They include the Example in the above doc-string.
         # ---------------------------------------------------------------------
 
+
     def is_parallel(self, line2):
         """
         What comes in:
@@ -605,7 +614,7 @@ class Line(object):
           :rtype: bool
         """
         # ---------------------------------------------------------------------
-        # TODO: 12.
+        # DONE: 12.
         #   a. READ the above specification, including the Example.
         #        ** ASK QUESTIONS AS NEEDED. **
         #        ** Be sure you understand it, ESPECIALLY the Example.
@@ -640,6 +649,8 @@ class Line(object):
         # floating-point errors while distinguishing numbers that really
         # are different from each other.
         #######################################################################
+        self.halfway =
+        return
 
     def reset(self):
         """
